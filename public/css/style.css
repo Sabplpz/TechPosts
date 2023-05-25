@@ -1,0 +1,36 @@
+/* styling for the whoel body */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* styling for the top header, include the radient */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Radient colors */
+    background-image: radial-gradient(circle, #181823, #537FE7);
+    height: 5rem;
+}
+
+/* Color and margin for the header text */
+h1 {
+    color: #E9F8F9;
+    margin-top: 0.75rem;
+}
+
+/* Styling for the buttons */
+.btn {
+    width: 100%;
+    background-color: #C0EEF2;
+    border: #C0EEF2;
+}
+
+/* Styling for the future weather cards */
+.posts {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #181823;
+    border: #537FE7;
+    color: #E9F8F9;
+}
