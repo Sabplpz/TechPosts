@@ -14,12 +14,22 @@ Comments.init(
     },
     postedBy: {
       type: DataTypes.STRING,
-      allowNull: false,
+      references: {
+          model: 'user',
+          key: 'id'
+        }
     },
     cont: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    post_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'posts',
+        key: 'id'
+      }
+    }
   },
   {
     sequelize,
@@ -27,7 +37,7 @@ Comments.init(
     createdAt: 'postedOn',
     freezeTableName: true,
     underscored: true,
-    modelName: 'posts',
+    modelName: 'comments',
   }
 );
 

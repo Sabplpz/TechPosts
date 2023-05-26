@@ -13,17 +13,20 @@ Posts.init(
       autoIncrement: true,
     },
     postedBy: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      type: DataTypes.INTEGER,
+      references:{
+        model: 'user',
+        key: 'id'
+      }
     },
-    title: {
+    postTitle: {
       type: DataTypes.STRING,
-      allowNull: false,
+      defaultValue: 'test',
     },
     cont: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
+    }
   },
   {
     sequelize,

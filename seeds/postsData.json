@@ -1,11 +1,11 @@
 [
     {
-      "postedBy": "Sabrina",
+      "postedBy": 1,
       "title": "Let's go out tonight!",
       "cont": "Who's down for a poetry night at the book club?"
     },
     {
-      "postedBy": "Federico",
+      "postedBy": 2,
       "title": "I'M DOWN!",
       "cont": "Which book club? send the addy lol"
     }

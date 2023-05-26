@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
       "postedBy": "Sabrina",
       "title": "Example title",
       "cont": "Example content",
-      }
+      }sql
   */
     Posts.create(req.body)
     .then((post) => res.status(200).json(post))
