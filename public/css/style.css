@@ -7,10 +7,19 @@ body {
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     /* Radient colors */
     background-image: radial-gradient(circle, #181823, #537FE7);
-    height: 5rem;
+    height: 6rem;
+}
+
+nav {
+    display: flex;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
 }
 
 /* Color and margin for the header text */
@@ -24,13 +33,36 @@ h1 {
     width: 100%;
     background-color: #C0EEF2;
     border: #C0EEF2;
+    color: black;
 }
 
-/* Styling for the future weather cards */
+/* Styling for the posts */
+.title {
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    background-color: #181823;
+    color: #E9F8F9;
+    border-radius: 1rem;
+}
+
 .posts {
     margin: 1rem;
     padding: 1rem;
-    background-color: #181823;
-    border: #537FE7;
+    justify-content: center;
+    background-color: #537FE7;
     color: #E9F8F9;
+    border-radius: 1rem;
 }
+
+.comments {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    background-color: #C0EEF2;
+    color: #181823;
+    border-radius: 1rem;
+}
+

@@ -13,7 +13,7 @@ Comments.init(
       autoIncrement: true,
     },
     postedBy: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       references: {
           model: 'user',
           key: 'id'

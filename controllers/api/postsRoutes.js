@@ -1,8 +1,10 @@
 const router = require('express').Router();
-const { Posts } = require('../../models');
+const { Posts, Comments } = require('../../models');
 
 router.get('/', async (req, res) => {
-    Posts.findAll()
+    Posts.findAll({
+      include: [{model: Comments}],
+     })
       .then((posts) => res.json(posts))
       .catch((err) => {
         console.log(err);
@@ -13,10 +15,10 @@ router.get('/', async (req, res) => {
 router.post('/', (req, res) => {
     /* req.body should look like this...
       {
-      "postedBy": "Sabrina",
+      "postedBy": 1,
       "title": "Example title",
       "cont": "Example content",
-      }sql
+      }
   */
     Posts.create(req.body)
     .then((post) => res.status(200).json(post))
@@ -35,7 +37,7 @@ router.put('/:id', (req, res) => {
       }
   */
     // update a posts' content by its id
-    Tag.update(req.body, {
+    Posts.update(req.body, {
       where: {
         id: req.params.id,
       },

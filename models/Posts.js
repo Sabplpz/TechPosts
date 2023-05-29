@@ -19,7 +19,7 @@ Posts.init(
         key: 'id'
       }
     },
-    postTitle: {
+    title: {
       type: DataTypes.STRING,
       defaultValue: 'test',
     },
