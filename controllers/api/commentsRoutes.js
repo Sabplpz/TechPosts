@@ -15,18 +15,20 @@ router.post('/', (req, res) => {
       "post_id": 1
       } 
   */
-      console.log(req.body)
-  //   Comments.create(req.body)
-  //   .then((comment) => 
-  //   console.log(comment)
+      userId = req.session.user_id;
+    Comments.create({
+      postedBy: userId,
+      cont: req.body.cont,
+      post_id: req.body.post_id
+    })
+    .then((comment) =>  
+    res.status(200).json(comment)
     
-  //  // res.status(200).json(comment)
-    
-  //   )
-  //   .catch((err) => {
-  //     console.log(err);
-  //     res.json(err);
-  //   });
+    )
+    .catch((err) => {
+      console.log(err);
+      res.json(err);
+    });
 });
 
 router.put('/:id', (req, res) => {

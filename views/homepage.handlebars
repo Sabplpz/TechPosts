@@ -1,11 +1,12 @@
 <!-- Loop over each object in the posts array -->
 {{#each posts as |post| }}
-<div class="row mb-4 posts">
+<div class="mb-4 posts">
+
     <div class="col-md-5">
         <div class="title">
-        <h2>
-            {{post.title}}
-        </h2>
+            <h2>
+                {{post.title}}
+            </h2>
         </div>
         <p>
             <span class="post-content">{{post.cont}}</span>
@@ -13,13 +14,32 @@
         <p>Posted by {{post.postedBy}} on {{post.postedOn}}</p>
     </div>
 
-    {{#if comments}}
-    <div class="col-md-7">
-        {{> comments-details}}
+    <p class="hidden" id="post-id">{{post.id}}</p>
+
+    <div class="col-md-6 comments">
+        <form class="form newcomment-form">
+            <div class="form-group">
+                <label for="cont"></label>
+                <input class="form-input" type="text" id="cont" />
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Add New Comment</button>
+            </div>
+        </form>
     </div>
+
+    {{#if post.comments}}
+    {{#each post.comments as |comment|}}
+    <div class="col-md-4">
+        <p>
+            <span class="comment-cont">{{comment.cont}}</span>
+        </p>
+        <p>Posted by {{comment.postedBy}} on {{comment.postedOn}}</p>
+    </div>
+    {{/each}}
     {{/if}}
 
-    <button class="btn btn-primary" id="new-comment" href="/api/comments/">Add new comment</button>
 </div>
 {{/each}}
 

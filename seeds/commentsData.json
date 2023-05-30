@@ -1,0 +1,12 @@
+[
+    {
+        "postedBy": 1,
+        "cont": "Example content",
+        "post_id": 1
+    },
+    {
+        "postedBy": 2,
+        "cont": "Example content",
+        "post_id": 2
+    }
+]

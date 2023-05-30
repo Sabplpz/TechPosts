@@ -1,4 +1,4 @@
-const session = require("express-session");
+// const session = require("express-session");
 
 const newCommentForm = async (event) => {
     // Stop the browser from submitting the form so we can do so with JavaScript
@@ -6,13 +6,13 @@ const newCommentForm = async (event) => {
   
     // Gather the data from the form elements on the page
     const cont = document.querySelector('#cont').value.trim();
-    const user = session.getAttribute("id");
+    const post_id = document.getElementById('post-id').innerHTML;
 
     if (cont) {
-      // Send the e-mail and password to the server
+      // Send the comment content
       const response = await fetch('/api/comments', {
         method: 'POST',
-        body: JSON.stringify({ cont , user }),
+        body: JSON.stringify({ cont , post_id}),
         headers: { 'Content-Type': 'application/json' },
       });
   

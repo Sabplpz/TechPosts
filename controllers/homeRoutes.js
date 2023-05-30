@@ -12,7 +12,7 @@ router.get('/', withAuth, async (req, res) => {
     });
 
     const posts = postsData.map((post) => post.get({ plain: true }));
-    // res.json(posts);
+    console.log(posts[0].comments);
 
     res.render('homepage', {
       posts,

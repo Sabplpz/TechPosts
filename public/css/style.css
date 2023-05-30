@@ -49,9 +49,11 @@ h1 {
 }
 
 .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 1rem;
     padding: 1rem;
-    justify-content: center;
     background-color: #537FE7;
     color: #E9F8F9;
     border-radius: 1rem;
@@ -61,8 +63,12 @@ h1 {
     margin: 0.5rem;
     padding: 0.5rem;
     justify-content: center;
-    background-color: #C0EEF2;
-    color: #181823;
+    background-color: #00337C;
+    color: #E9F8F9;
     border-radius: 1rem;
+}
+
+.hidden {
+    display: none;
 }
 
