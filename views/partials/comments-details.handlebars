@@ -1,8 +1,8 @@
 {{#each comments as |comment|}}
-<div class="col-md-4">
+<div class="col-md-4 comments">
     <p>
-        <span class="dollar-amount">{{comment.cont}}</span>
+        <span class="comment-cont">{{comment.cont}}</span>
     </p>
-    <p>Posted by {{comment.postedBy}} on {{comment.createdAt}}</p>
+    <p>Posted by {{user.name}} on {{comment.postedOn}}</p>
 </div>
 {{/each}}

@@ -1,0 +1,28 @@
+<div class="dasboard" style="">
+    <div class="col-md-6">
+        <h2>New Post</h2>
+
+        <form class="form newpost-form">
+            <div class="form-group">
+                <label for="title">Post Title:</label>
+                <br>
+                <input class="form-input" type="text" id="title" />
+            </div>
+            <div class="form-group">
+                <label for="cont">Post content:</label>
+                <br>
+                <input class="form-input" type="text" id="cont" />
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+
+    {{#if posts}}
+    {{> posts-details}}
+    {{/if}}
+</div>
+
+<script src="/js/posts.js"></script>

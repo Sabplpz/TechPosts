@@ -1,0 +1,11 @@
+{{#each posts as |post|}}
+
+<div class="col-md-4 posts">
+    <a href="/posts/{{post.id}}"><p class="post-title">{{post.title}}</p></a>
+    <p class="post-cont">{{post.cont}}</p>
+    <p>Posted by {{user.name}} on {{post.postedOn}}</p>
+    <h1 class="hidden" id="post-id">{{post.id}}</h1>
+    <button class="btn btn-secondary" id="delete" type="submit">Delete</button>
+</div>
+
+{{/each}}

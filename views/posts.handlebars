@@ -1,20 +1,35 @@
-<div class="col-md-6">
-    <h2>New Post</h2>
+<div class="mb-4 posts">
 
-    <form class="form newpost-form">
-        <div class="form-group">
-            <label for="post-title">Post Title:</label>
-            <input class="form-input" type="text" id="title" />
+    <div class="col-md-5">
+        <div class="title">
+            <h2>
+                {{title}}
+            </h2>
         </div>
-        <div class="form-group">
-            <label for="post-cont">Post content:</label>
-            <input class="form-input" type="text" id="cont" />
-        </div>
+        <p>
+            <span class="post-content">{{cont}}</span>
+        </p>
+        <p>Posted by {{user.name}} on {{postedOn}}</p>
+    </div>
 
-        <div class="form-group">
-            <button class="btn btn-primary" type="submit">Done!</button>
-        </div>
-    </form>
+    <p class="hidden" id="post-id">{{id}}</p>
+
+    <div class="col-md-6 addComments">
+        <form class="form newcomment-form">
+            <div class="form-group">
+                <label for="cont">Add a comment: </label>
+                <input class="form-input" type="text" id="cont" />
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Add New Comment</button>
+            </div>
+        </form>
+    </div>
 </div>
 
-<script src="/js/posts.js"></script>
+{{#if comments}}
+{{> comments-details}}
+{{/if}}
+
+<script src="/js/comments.js"></script>

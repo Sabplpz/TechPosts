@@ -15,7 +15,7 @@ router.post('/', (req, res) => {
       "post_id": 1
       } 
   */
-      userId = req.session.user_id;
+    userId = req.session.user_id;
     Comments.create({
       postedBy: userId,
       cont: req.body.cont,

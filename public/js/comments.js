@@ -1,5 +1,3 @@
-// const session = require("express-session");
-
 const newCommentForm = async (event) => {
     // Stop the browser from submitting the form so we can do so with JavaScript
     event.preventDefault();
@@ -17,7 +15,7 @@ const newCommentForm = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace(`/posts/${post_id}`);
       } else {
         alert('Error!');
       }
