@@ -15,7 +15,7 @@ Welcome to TechPosts! This app will help you connect with other tech involved pe
 
 ### Installation
 
-Visit (https://afternoon-depths-34986-155d95e5176d.herokuapp.com/)[https://afternoon-depths-34986-155d95e5176d.herokuapp.com/] to use the TechPosts App.
+Visit https://afternoon-depths-34986-155d95e5176d.herokuapp.com/ to use the TechPosts App.
 
 ### Usage
 
