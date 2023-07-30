@@ -3,7 +3,7 @@
 # TechPosts
 
 ## Description
-Welcome to TechPosts! This app will help you connect with other tech involved people, and their toughts on new technologies, or anything that might come up. This was built so that the tech community has a better place to communicate directly. I learnt a lot about the back-end of apps witht his project, taht's what happens when you fight with routes!
+Welcome to TechPosts! This app will help you connect with other tech involved people, and their toughts on new technologies, or anything that might come up. This was built so that the tech community has a better place to communicate directly. I learnt a lot about the back-end of apps with this project, that's what happens when you fight with routes!
 
 ## Table of Contents
 
