@@ -1,6 +1,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-# Challenge 14: TechPosts
+# TechPosts
 
 ## Description
 Welcome to TechPosts! This app will help you connect with other tech involved people, and their toughts on new technologies, or anything that might come up. This was built so that the tech community has a better place to communicate directly. I learnt a lot about the back-end of apps witht his project, taht's what happens when you fight with routes!
